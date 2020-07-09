@@ -1,0 +1,9 @@
+  dockermon:
+    container_name: dockermon
+    image: philhawthorne/ha-dockermon:arm
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /path/to/config:/config
+    ports:
+      - 8126:8126
