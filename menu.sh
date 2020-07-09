@@ -48,6 +48,7 @@ declare -A cont_array=(
 	[gitea]="Gitea"
 	[dozzle]="Dozzle"
 	[dockermon]="Dockermon"
+	[homeassistant]="Home Assistant"
 )
 
 declare -a armhf_keys=(
@@ -81,6 +82,7 @@ declare -a armhf_keys=(
 	"gitea"
 	"dozzle"
 	"dockermon"
+	"homeassistant"
 	# add yours here
 )
 sys_arch=$(uname -m)
