@@ -1,6 +1,8 @@
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: unless-stopped
-    ports:
-      - 9080:8080
+adminer:
+  container_name: adminer
+  image: adminer
+  restart: unless-stopped
+  ports:
+    - "9080:8080"
+  networks:
+    - iotstack_nw

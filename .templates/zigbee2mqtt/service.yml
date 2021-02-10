@@ -8,3 +8,4 @@
      - /dev/ttyACM0:/dev/ttyACM0
     restart: unless-stopped
     network_mode: host
+wq

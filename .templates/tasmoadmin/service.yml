@@ -1,9 +1,11 @@
-  tasmoadmin:
-    container_name: tasmoadmin
-    image: raymondmm/tasmoadmin
-    restart: unless-stopped
-    ports:
-      - "8088:80"
-    volumes:
-      - ./volumes/tasmoadmin/data:/data
-      
+tasmoadmin:
+  container_name: tasmoadmin
+  image: raymondmm/tasmoadmin
+  restart: unless-stopped
+  ports:
+    - "8088:80"
+  volumes:
+    - ./volumes/tasmoadmin/data:/data
+  networks:
+    - iotstack_nw
+
